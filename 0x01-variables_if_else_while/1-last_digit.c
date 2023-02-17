@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
 
 /**
@@ -20,7 +21,7 @@ int main(void)
 		printf("Last digit of %d is %d and is greater then 5", n, last_digit);
 
 	if (last_digit == 0)
-		printf("Last digit of %d is %s and is 0", n, last_digit);
+		printf("Last digit of %d is %d and is 0", n, last_digit);
 
 	if (last_digit < 6 && last_digit != 0)
 		printf("Last digit of %d is %d and is less then 6 and not 0", n, last_digit);
