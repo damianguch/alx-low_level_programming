@@ -4,9 +4,9 @@
 /**
  * main - Entry point
  *
- * Description: 'and that piece of art is useful" - Dora Korpar, 2015-10-19'
+ * Description: 'To print a string to the standar error'
  *
- * Return: Always 0 (Success)
+ * Return: Always 1 (Failure)
  */
 
 int main(void)
