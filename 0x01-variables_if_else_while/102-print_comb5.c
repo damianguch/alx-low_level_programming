@@ -18,7 +18,7 @@ int main(void)
 		{
 			for (t = tens; t <= '9'; t++) /*print second of pair*/
 			{
-				for (u = units + 1; u <= '9'; u++)
+				for (u = tens + 1; u <= '9'; u++)
 				{
 					putchar(tens);
 					putchar(units);
