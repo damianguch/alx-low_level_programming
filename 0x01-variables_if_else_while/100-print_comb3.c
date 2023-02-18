@@ -9,15 +9,15 @@
 int main(void)
 {
 	int tens;
-	int ones;
+	int units;
 
 	for (tens = 0; tens <= 9; tens++)
 	{
-		for (ones = (tens + 1); ones <= 9; ones++)
+		for (units = (tens + 1); units <= 9; units++)
 		{
-			putchar(tens + '0');
-			putchar(ones + '0');
-			if (!(tens == 8 && ones == 9))
+			putchar('0' | tens);
+			putchar('0' | units);
+			if (!(tens == 8 && units == 9))
 			{
 				putchar(',');
 				putchar(' ');
