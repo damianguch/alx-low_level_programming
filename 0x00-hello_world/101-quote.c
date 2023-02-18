@@ -6,7 +6,7 @@
  *
  * Description: 'To print a string to the standar error'
  *
- * Return: Always 1 (Failure)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
