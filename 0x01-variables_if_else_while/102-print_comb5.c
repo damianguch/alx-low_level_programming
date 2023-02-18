@@ -1,45 +1,37 @@
 #include <stdio.h>
 
 /**
- *main - Entry point
- *Return: Always 0 (Success)
+ * main - Prints all possible combinations of two two-digit numbers,
+ *        ranging from 0-99, separated by a comma followed by a space.
+ *
+ * Return: Always 0.
  */
 
 int main(void)
 {
 	int tens;
 	int units;
-	int t;
-	int u;
 
-	for (tens = '0'; tens <= '9'; tens++) /*print first two digit combo*/
+	for (tens = 0; tens <= 98; tens++)
 	{
-		for (units = '0'; units <= '9'; units++)
+		for (units = tens + 1; units <= 99; units++)
 		{
-			for (t = '0'; t <= '9'; t++) /*print second of pair*/
-			{
-				for (u = '0'; u <= '9'; u++)
-				{
-					putchar(tens);
-					putchar(units);
-					putchar(' ');
-					putchar(t);
-					putchar(u);
+			putchar((tens / 10) + '0');
+			putchar((tens % 10) + '0');
+			putchar(' ');
+			putchar((units / 10) + '0');
+			putchar((units % 10) + '0');
 
-					if (!((tens == '9' && units == '8') &&
-					      (t == '9' && u == '9')))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+			if (tens == 98 && units == 99)
+				continue;
 
-				u = '0';
-
-			}
+			putchar(',');
+			putchar(' ');
 		}
 	}
+
 	putchar('\n');
 
 	return (0);
 }
+
