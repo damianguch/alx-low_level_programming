@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
  * free_list - free linked list
  * @head: linked list
