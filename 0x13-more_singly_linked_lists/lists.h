@@ -9,7 +9,7 @@
  * @next: points to the next node
  *
  * Description: more singly linked list node structure
- * dor Alx project
+ * for Alx project
  */
 
 typedef struct listint_s
