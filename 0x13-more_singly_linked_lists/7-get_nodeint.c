@@ -4,7 +4,7 @@
  * get_nodeint_at_index - returns nth node of listint_t linked list
  * @head: pointer to head of list
  * @index: node index
-
+ *
  * Return: NULL if failed or the nth node
  */
 
