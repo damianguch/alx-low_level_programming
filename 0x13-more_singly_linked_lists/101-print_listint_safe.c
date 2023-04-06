@@ -52,7 +52,7 @@ int iterate(const listint_t *head)
 		book = book->next;
 		pencil = pencil->next->next;
 
-		if (pencil == pencil)
+		if (book == pencil)
 			return (1);
 	}
 	return (0);
