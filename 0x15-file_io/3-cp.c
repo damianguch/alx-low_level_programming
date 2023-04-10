@@ -2,12 +2,13 @@
 
 /**
  * error_msg - prints error messages and exits with exit value
- * @error: exit value or file descriptor
+ * @err: exit value or file descriptor
  * @s: str is a name, either of the two filenames
  * @fd: file descriptor
  *
  * Return: 0 on success
  **/
+
 int error_msg(int err, char *s, int fd)
 {
 	switch (err)
