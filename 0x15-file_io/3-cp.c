@@ -8,7 +8,7 @@
  *
  * Return: 0 on success
  **/
-int error_msg(int error, char *s, int fd)
+int error_msg(int err, char *s, int fd)
 {
 	switch (err)
 	{
@@ -62,8 +62,8 @@ int main(int argc, char *argv[])
 			error_msg(99, argv[2], 0);
 	}
 
-	close(fd2) == -1 ? (error_msg(100, NULL, fd_2)) : close(fd2);
-	close(fd_1) == -1 ? (error_msg(100, NULL, fd1)) : close(fd1);
+	close(fd2) == -1 ? (error_msg(100, NULL, fd2)) : close(fd2);
+	close(fd1) == -1 ? (error_msg(100, NULL, fd1)) : close(fd1);
 
 	return (0);
 }
