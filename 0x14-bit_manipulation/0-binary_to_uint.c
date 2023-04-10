@@ -17,13 +17,13 @@ unsigned int binary_to_uint(const char *b)
 
 	s = b;
 
-	while (*b < s)
+	while (b >= s)
 	{
 		b++;
 	}
 	b--;
 
-	power = o;
+	power = 0;
 	sum = 0;
 
 	while (b >= s)
